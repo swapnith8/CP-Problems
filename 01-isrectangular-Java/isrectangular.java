@@ -2,6 +2,7 @@
 // # array arr and returns True  if it is rectangular, so each row has
 // #  the same number of elements. Return False otherwise.
 
+
 class isrectangular {
 	public boolean fun_isrectangular(int[][] arr){
 		int s = arr[0].length;
@@ -9,6 +10,6 @@ class isrectangular {
 			if( s != arr[i].length){
 				return false;
 			}
-		}return true;
+		}return true; 
 	}
 }
