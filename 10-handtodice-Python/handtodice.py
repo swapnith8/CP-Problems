@@ -11,9 +11,7 @@ def handtodice(hand):
 	c = hand % 10 
 	temp = hand // 10
 	b = temp % 10 
-	temp1 = a // 10
-	a = b % 10
-	
-
+	temp1 = temp // 10
+	a = temp1 % 10
 	return a,b,c
 
