@@ -7,9 +7,13 @@
 
 def handtodice(hand):
 	# your code goes here
-	a = hand % 100
-	b = hand % 100
-	c = hand % 10
-	if ( hand == abc  ):
-		return a,b,c
-		
+	
+	c = hand % 10 
+	temp = hand // 10
+	b = temp % 10 
+	temp1 = a // 10
+	a = b % 10
+	
+
+	return a,b,c
+
