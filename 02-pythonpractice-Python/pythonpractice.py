@@ -22,7 +22,7 @@ class Classy(object):
     def addItem(self,str):
         self.items.append(str)
 
-    def Classiness(self):
+    def classiness(self):
         s=0
         for item in self.items:
             if(item == "tophat"):
