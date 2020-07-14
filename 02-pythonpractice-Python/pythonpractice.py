@@ -19,17 +19,17 @@ class Classy(object):
     def __init__(self):
         self.items = []
 
-    def addItems(self,item):
-        self.items.append(item)
+    def addItem(self,str):
+        self.items.append(str)
 
     def Classiness(self):
         s=0
-        for str in self.items:
-            if(str == "tophat"):
+        for item in self.items:
+            if(item == "tophat"):
                 s+=2
-            elif(str == "bowtie"):
+            elif(item == "bowtie"):
                 s+=4
-            elif(str == "monocle"):
+            elif(item == "monocle"):
                 s+=5
             else:
                 s+=0    
