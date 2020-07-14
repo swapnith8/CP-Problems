@@ -20,7 +20,7 @@ class Classy(object):
         self.items = []
 
     def addItems(self,str):
-        self.items.append(str1)
+        self.items.append(str)
 
     def getClassiness(self):
         s=0
@@ -30,6 +30,6 @@ class Classy(object):
             elif(item == "bowtie"):
                 s+=4
             elif(item == "monocle"):
-                s+=3
+                s+=5
         return s
-                                
+me = Classy()
