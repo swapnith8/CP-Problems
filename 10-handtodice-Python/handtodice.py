@@ -7,4 +7,9 @@
 
 def handtodice(hand):
 	# your code goes here
-	pass
+	a = hand % 100
+	b = hand % 100
+	c = hand % 10
+	if ( hand == abc  ):
+		return a,b,c
+		
