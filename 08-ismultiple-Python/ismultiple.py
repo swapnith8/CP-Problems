@@ -17,4 +17,4 @@ def fun_ismultiple(m, n):
 	if(fun_isfactor(m,n) == True):
 		return True
 	else:
-		return False # replace with your solution
+		return False 
