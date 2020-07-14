@@ -4,6 +4,17 @@
 # Also, you should make constructive use of the isFactor function you just wrote above.
 
 
-
+def fun_isfactor(m,n):
+	if(m == 0):
+		return True
+	elif(n == 0):
+		return False
+	elif(m % n == 0):
+		return True
+	else:
+		return False			
 def fun_ismultiple(m, n):
-	return False # replace with your solution
+	if(fun_isfactor(m,n) == True):
+		return True
+	else:
+		return False # replace with your solution
