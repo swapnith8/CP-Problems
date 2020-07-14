@@ -9,8 +9,8 @@ def fun_isfactor(m,n):
 		return True
 	elif(n == 0):
 		return False
-	elif(m % n == 0):
-		return True
+	elif( m % n == 0):
+		return True	
 	else:
 		return False			
 def fun_ismultiple(m, n):
