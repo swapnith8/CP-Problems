@@ -7,7 +7,7 @@ import math
 def isperfectsquare(n):
 	# your code goes here
 	x = math.sqrt(n)
-	if(type(x)**2 == n):
+	if(type(x+0.5)**2 == n):
 		return True
 	else:
 		return False
