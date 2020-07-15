@@ -13,11 +13,15 @@
 
 def dicetoorderedhand(a, b, c):
 	# your code goes here
-	if(a < b > c):
+	if(a < b ) / (a < c ):
 		return (c,b,a)
-	elif(b<a>c):
+	elif((a>b ) & (a>c)) or (a == b == c):
+		return (a,b,c)
+	elif(b>a >c):
+		return(b,a,c)
+	elif(c>a>b):
 		return (c,a,b)
-	elif(a>c<b):
-		return( b,c,a)
+	elif(b>c>a):
+		return (b,c,a)		
 	else:
-		return(a,b,c)	
+		return(a,c,b)	
