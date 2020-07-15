@@ -6,5 +6,5 @@ import math
 
 def isperfectsquare(n):
 	# your code goes here
-	x = math.sqrt((math.pow(int(n),int(2))))
-	return int(x) == n
+	return int(math.sqrt((math.pow(n,2)))) == n
+				
