@@ -13,15 +13,18 @@
 
 def dicetoorderedhand(a, b, c):
 	# your code goes here
-	if(a < b ) / (a < c ):
-		return (c,b,a)
-	elif((a>b ) & (a>c)) or (a == b == c):
-		return (a,b,c)
-	elif(b>a >c):
-		return(b,a,c)
-	elif(c>a>b):
-		return (c,a,b)
-	elif(b>c>a):
-		return (b,c,a)		
-	else:
-		return(a,c,b)	
+	temp = max(1,2,3)
+	temp1 = min(1,2,3)
+	x = temp * 100 + b* 10 + temp1 
+	if(a < b < c ):
+		return (x)
+	# elif((a>b ) & (a>c)) or (a == b == c):
+	# 	return (abc)
+	# elif(b>a >c):
+	# 	return(bac)
+	# elif(c>a>b):
+	# 	return (cab)
+	# elif(b>c>a):
+	# 	return (bca)		
+	# else:
+	# 	return(acb)	
