@@ -10,11 +10,11 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	disx = math.sqrt(((x2-x1)**2) +((y2 -y1)**2))
 	disy = math.sqrt(((x3-x1)**2)+((y3-y1)**2))
 	disz = math.sqrt(((x1-x3)**2)+((y1-y3)**2))
-	if(disx == math.sqrt((disy**2)+(disz**2))):
+	if(disx == math.isclose(math.sqrt((disy**2)+(disz**2)))):
 		return True
-	elif(disy == math.sqrt((disx**2)+(disz**2))):
+	elif(disy == math.isclose(math.sqrt((disx**2)+(disz**2)))):
 		return True
-	elif (disz == math.sqrt((disy**2)+(disx**2))):
+	elif (disz == math.isclose(math.sqrt((disy**2)+(disx**2)))):
 		return True
 	else:
 		return False		
