@@ -6,13 +6,13 @@
 import math
 def trianglearea(disx,disy,disz):
 	s = (disx + disy + disz) /2
-	area = math.sqrt ((s)*(s-dis1)*(s-dist2)+(s-dist3))
+	area = math.sqrt ((s)*(s-disx)*(s-disy)*(s-disz))
 	return area
 def triangleareabycoordinates(x1, y1, x2, y2, x3, y3):
 	# your code goes here
 
 	disx = math.sqrt(((x2-x1)**2)+((y2-y1)**2))
 	disy = math.sqrt(((x3-x2)**2)+((y3-y2)**2))
-	disZ = math.sqrt(((x1-x3)**2)+((y1-y3)**2))
+	disz = math.sqrt(((x1-x3)**2)+((y1-y3)**2))
 	A = trianglearea(disx,disy,disz)
 	return A
