@@ -10,16 +10,18 @@ def fun_set_kth_digit(n, k, d):
 	revStr = nStr[::-1]
 	print (revStr)
 	StrLen = len(nStr)
+	if(3>=StrLen):
+		revStr += 1
 	x = nStr[3]
 	y =""
 	if (-468<0):
 		y += "-"
-		for i in revStr:
+		for i in range(StrLen):
 			if(revStr[i]!= x):
 				y += revStr[i]
 				print (y)
 			else:
 				y += dStr
-				print(y)
+				# print(y)
 
-	print(x)
+	
