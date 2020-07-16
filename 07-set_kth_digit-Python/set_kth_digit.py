@@ -5,25 +5,33 @@
 # so the 0th digit is the rightmost digit. 
 
 def fun_set_kth_digit(n, k, d):
-	nStr = str(-468)
+	nStr = str(n)
 	StrLen = len(nStr)
-	dStr = str(1)
-	revStr = nStr[::-1]
+	dStr = str(d)
+	revStr = nStr[StrLen::-1]
 	print (revStr)
 
-	if(3>=StrLen):
-		revStr += 1
-	x = nStr[3]
+	if(k>=StrLen):
+		revStr += dStr
+	# print(revStr)	
+	
+	x = nStr[k]
+	nStr = revStr[len(revStr)::-1]	
 	y =""
-	if (-468<0):
+	if (n<0):
 		y += "-"
-		for i in range(StrLen):
-			if(revStr[i]!= x):
-				y += revStr[i]
+		for i in range(len(nStr)):
+			if(nStr[i]!= x):
+				y += nStr[i]
 			
 			else:
 				y += dStr
+	else:
+		for i in range(len(nStr)):
+			if(nStr[i]!= x):
+				y += nStr[i]
 			
-		print(y)
+			else:
+				y += dStr
 
-	
+	print(y)
