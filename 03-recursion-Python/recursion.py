@@ -5,4 +5,4 @@ iterative code in the instructions."""
 
 def get_fib(position):
     for i in range (position + 1):
-       return (position - 1) + (position - 2)
+       return (position - i) + (position - i+1)
