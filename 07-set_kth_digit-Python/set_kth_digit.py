@@ -9,5 +9,9 @@
 def fun_set_kth_digit(n, k, d):
 	nString = str(n)
 	dChar = str(d)
-	nChar = split(nString)
-	print (nChar)
+	# print (split(nString))
+	nChar = [c for c in nString]
+	# print (nChar)
+	nChar[k] = dChar
+	newStr = "".join(nChar)
+	return (int(newStr))
