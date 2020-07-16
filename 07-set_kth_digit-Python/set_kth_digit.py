@@ -5,14 +5,14 @@
 # so the 0th digit is the rightmost digit. 
 
 def fun_set_kth_digit(n, k, d):
-	nStr = str(n)
-	dStr = str(d)
+	nStr = str(-468)
+	dStr = str(1)
 	revStr = nStr[::-1]
 	print (revStr)
-	nStrLen = len(nStr)
-	x = nStr[k]
+	StrLen = len(nStr)
+	x = nStr[3]
 	y =""
-	if (n<0):
+	if (-468<0):
 		y += "-"
 		for i in revStr:
 			if(revStr[i]!= x):
