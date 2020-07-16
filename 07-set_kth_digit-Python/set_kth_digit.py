@@ -7,11 +7,12 @@
 
 
 def fun_set_kth_digit(n, k, d):
-	nString = str(n)
-	dChar = str(d)
+	nString = str(468)
+	dChar = str(1)
 	# print (split(nString))
 	nChar = [c for c in nString]
 	# print (nChar)
-	nChar[k] = dChar
+	nReverse = reverse(nChar)
+	nChar[1] = dChar
 	newStr = "".join(nChar)
-	return (int(newStr))
+	print (int(newStr))
