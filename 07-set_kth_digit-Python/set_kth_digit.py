@@ -7,14 +7,24 @@
 
 
 def fun_set_kth_digit(n, k, d):
-	nString = str(468)
-	dChar = str(1)
-	# print (split(nString))
-	nChar = [c for c in nString]
-	# print (nChar)
-	nReverse = list(reversed(nChar))
-	# print (nReverse)
-	nReverse[0] = dChar
-	newRev = list(reversed(nReverse))
+	num = abs(n)
+	nString = str(num)
+	dChar = str(d)
+
+	# # print (split(nString))
+	# nChar = [c for c in nString]
+	# # print (nChar)
+	# nReverse = list(reversed(nChar))
+	# # print (nReverse)
+	s = len(nString)
+	# # print(s)
+	if s >= k:
+		new = nReverse.append(dChar)
+		newRev1 = list(reversed(new))
+		print(newRev1)
+	else:
+		nReverse[k] = dChar	
+		newRev = list(reversed(nReverse))
+		print(newRev)
 	newStr = "".join(newRev)
-	return (int(newStr))
+	print (int(newStr))
