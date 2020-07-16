@@ -9,9 +9,13 @@
 
 
 def fun_pascaltrianglevalue(row, col):
+
 	list = [1]
 	for i in range(row):
 		list.append(int(list[i]*(row-i)/(i+1)))
-	print (list)	
+	if col<len(list):
+		return list[col]
+	else:
+		return 0	
 
 	
