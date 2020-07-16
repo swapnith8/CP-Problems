@@ -7,5 +7,7 @@
 
 
 def fun_set_kth_digit(n, k, d):
-		return 0
-
+	nString = str(n)
+	dChar = str(d)
+	nChar = split(nString)
+	print (nChar)
