@@ -12,7 +12,9 @@ def fun_set_kth_digit(n, k, d):
 	# print (split(nString))
 	nChar = [c for c in nString]
 	# print (nChar)
-	nReverse = reverse(nChar)
-	nChar[1] = dChar
-	newStr = "".join(nChar)
-	print (int(newStr))
+	nReverse = list(reversed(nChar))
+	# print (nReverse)
+	nReverse[0] = dChar
+	newRev = list(reversed(nReverse))
+	newStr = "".join(newRev)
+	return (int(newStr))
