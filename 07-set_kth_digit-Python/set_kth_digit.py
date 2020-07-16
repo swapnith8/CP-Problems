@@ -11,5 +11,15 @@ def fun_set_kth_digit(n, k, d):
 	print (revStr)
 	nStrLen = len(nStr)
 	x = nStr[k]
-	
+	y =""
+	if (n<0):
+		y += "-"
+		for i in revStr:
+			if(revStr[i]!= x):
+				y += revStr[i]
+				print (y)
+			else:
+				y += dStr
+				print(y)
+
 	print(x)
