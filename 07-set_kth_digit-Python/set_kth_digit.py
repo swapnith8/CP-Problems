@@ -6,11 +6,12 @@
 
 def fun_set_kth_digit(n, k, d):
 	nStr = str(n)
+	StrLen = len(nStr)
 	dStr = str(d)
-	revStr = nStr[len(nStr)::-1]
+	revStr = nStr[StrLen::-1]
 	# print (revStr)
 
-	if(k>=len(nStr)):
+	if(k>=StrLen):
 		revStr += dStr
 	# print(revStr)	
 	
