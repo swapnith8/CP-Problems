@@ -6,7 +6,8 @@ import math
 
 def isperfectsquare(n):
 	# your code goes here
-	if(type(temp)==int and temp>0):
+
+	if(type(n)==int and n>0):
 		return int(math.sqrt((math.pow(n,2)))) == n
 	return False
 
