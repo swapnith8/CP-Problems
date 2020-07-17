@@ -9,7 +9,18 @@
 import math
 
 def largestperfectsquare(n):
-	# your code goes here
-	if(type(n)==int and n>0):
-		return int(math.sqrt((math.pow(n,2)))) == n
-	return False
+	x = math.sqrt(n)
+	if((x -math.floor(x)) == 0):
+		return n
+		
+	else:
+		max = 0
+		for i in range(1,n):
+			y = math.sqrt(i)
+			if((y -math.floor(y)) == 0):
+				max = i
+			return max			
+
+
+	
+	
