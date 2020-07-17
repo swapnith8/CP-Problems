@@ -14,17 +14,23 @@
 # assert(ishappynumber(404) == True)
 # assert(ishappynumber(405) == False)
 
+def findSum(n):
+	sum = 0
+	while(n>0):
+		s = n % 10
+		sum = sum +(s)*(s)
+		n = n //10
+	return sum
+
 def ishappynumber(n):
 	# your code goes here
-	n = abs(404)
-	s = n % 10
-	temp = n //10
-	# print(temp)
-	# print(s)
-	sum = s**2+temp**2
-
-	# if (n < 0):
-		# return False
-	# else:
-
+	if (n <= 0):
+		return False
+	sum = n
+	while(sum !=1 and sum!=4):
+		sum = findSum(sum)
+	if(sum == 1):
+		return True
+	else:
+		return False
 	pass
