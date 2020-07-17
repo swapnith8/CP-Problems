@@ -10,7 +10,8 @@
 
 def gcd(m, n):
 	# your code goes here
-	y = gcd(250 , 270%250)
-	print(y)
-	# return n
+	if(m == 0):
+		return n
+	
+	return gcd(n%m, m) 
 	
