@@ -10,4 +10,5 @@
 
 def gcd(m, n):
 	# your code goes here
-	pass
+	return gcd(n , m%n)
+	
