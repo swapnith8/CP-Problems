@@ -6,9 +6,11 @@ def hasconsecutivedigits(n):
 	# your code goes here
 	n = abs(n)
 	Str = str(n)
-	# l =[]
-	for i in range(n):
-		Str[l]=Str[i+1]
-	print (Str)	
+	l = split(Str)
+	print(l)
+
+	# for i in range(n):
+	# 	Str[i]=Str[i+1]
+	# print (Str)	
 
 	
