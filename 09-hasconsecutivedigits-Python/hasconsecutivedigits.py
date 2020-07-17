@@ -5,10 +5,10 @@
 def hasconsecutivedigits(n):
 	# your code goes here
 	n = abs(n)
-	str = str(n)
+	Str = str(n)
 	# l =[]
 	for i in range(n):
-		str[l]=str[i+1]
-	print (str)	
+		Str[l]=Str[i+1]
+	print (Str)	
 
 	
