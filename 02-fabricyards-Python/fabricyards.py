@@ -19,8 +19,9 @@ def fun_fabricyards(inches):
 	list = []
 	list.append(x)
 	g = sorted(list)
-	# print(g)
-	print (y[:1])
+	y = g[:1]
+	print( int(y))
+	print (inches)
 
 def fun_fabricexcess(inches):
 	# your code goes here
