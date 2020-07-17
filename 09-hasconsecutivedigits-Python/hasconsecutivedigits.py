@@ -6,11 +6,13 @@ def hasconsecutivedigits(n):
 	# your code goes here
 	n = abs(n)
 	Str = str(n)
-	l = split(Str)
-	print(l)
+	c = list(Str)
+	# print(c)
 
-	# for i in range(n):
-	# 	Str[i]=Str[i+1]
-	# print (Str)	
+	for i in range(len(c)+1):
+		if(c[i]==c[i+1]):
+			return True
+		# else:
+		# 	return False	
 
 	
