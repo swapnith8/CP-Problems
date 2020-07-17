@@ -16,11 +16,13 @@
 
 def ishappynumber(n):
 	# your code goes here
-	n = abs(97)
+	n = abs(404)
 	s = n % 10
 	temp = n //10
-	print(temp)
-	print(s)
+	# print(temp)
+	# print(s)
+	sum = s**2+temp**2
+
 	# if (n < 0):
 		# return False
 	# else:
