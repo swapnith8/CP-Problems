@@ -16,4 +16,13 @@
 
 def ishappynumber(n):
 	# your code goes here
+	n = abs(97)
+	s = n % 10
+	temp = n //10
+	print(temp)
+	print(s)
+	# if (n < 0):
+		# return False
+	# else:
+
 	pass
