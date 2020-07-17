@@ -10,16 +10,16 @@ import math
 
 def largestperfectsquare(n):
 	x = math.sqrt(n)
-	if((x -math.floor(x)) == 0):
-		return n
-		
-	else:
+	if((x -math.floor(x)) != 0):
 		max = 0
 		for i in range(1,n):
 			y = math.sqrt(i)
 			if((y -math.floor(y)) == 0):
 				max = i
-			return max			
+		return max	
+	else:
+		return n
+				
 
 
 	
