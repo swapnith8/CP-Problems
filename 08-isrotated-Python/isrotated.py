@@ -6,4 +6,11 @@
 
 def isrotated(str1, str2):
 	#Your code goes here
-	pass
+	x= sorted("ACDEFGHIJKLMNOPQRSTUVWXYZB")
+	# if(sorted(str1) == sorted(str2)):
+	# 	return True
+	# else:
+	# 	return False
+	sorted("ACDEFGHIJKLMNOPQRSTUVWXYZB")
+			
+	
