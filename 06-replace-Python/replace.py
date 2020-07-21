@@ -9,9 +9,12 @@ def fun_replace(s1, s2, s3):
 	for i in range(len(s1)):
 		if (s1[i]==s2):
 			s = s+s3
+			print (s)		
+
 		else:
 			s = s+s1[i]
-	return s		
+			print (s)		
+
 	# l = len(s2)
 	# s =""
 	# i = 0
