@@ -5,4 +5,10 @@
 
 def median(a):
 	# your code goes here
-	pass
+	x  = len(a)
+	if(x%2==1):
+		return a[x//2]
+	elif(x==0):
+		return None
+	else:
+		return (a[x//2]+a[(x//2)-1])/2
