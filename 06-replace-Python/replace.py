@@ -24,6 +24,6 @@ def fun_replace(s1, s2, s3):
 			i=i+l
 		else:
 			s+=s1[i]
-			i=i+l
+			i=i+1
 	return s
 
