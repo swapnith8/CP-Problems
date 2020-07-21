@@ -5,16 +5,6 @@
 
 
 def fun_replace(s1, s2, s3):
-	# s = ''
-	# for i in range(len(s1)):
-	# 	if (s1[i]==s2[i]):
-	# 		s = s+s3[i]
-	# 		# print (s)		
-
-	# 	else:
-	# 		s = s+s1[i]
-					
-	# print (s)
 	l = len(s2)
 	s =""
 	i = 0
