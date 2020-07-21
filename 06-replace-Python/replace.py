@@ -11,9 +11,9 @@ def fun_replace(s1, s2, s3):
 	while(i<len(s1)):
 		if(s1[i:i+1]==s2):
 			s+=s3
-			i+=x
+			i=i+1
 		else:
 			s+=s1[i]
-			i+=x
+			i=i+1
 	return s
 
