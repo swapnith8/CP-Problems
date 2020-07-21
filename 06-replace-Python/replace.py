@@ -11,7 +11,7 @@ def fun_replace(s1, s2, s3):
 			s = s+s3
 		else:
 			s = s+s1[i]
-	returns		
+	return s		
 	# l = len(s2)
 	# s =""
 	# i = 0
