@@ -5,13 +5,13 @@
 
 
 def fun_replace(s1, s2, s3):
-	b = ''
-	for x in s1:
-		if x!= s2:
-			b+=x
+	s = ''
+	for i in range(len(s1)):
+		if (s1[i]==s2):
+			s = s+s3
 		else:
-			b+=s3
-	return b		
+			s = s+s1[i]
+	returns		
 	# l = len(s2)
 	# s =""
 	# i = 0
