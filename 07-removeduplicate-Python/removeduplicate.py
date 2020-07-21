@@ -11,10 +11,10 @@ def removeduplicate(text):
 		x.append(text[i])
 	y =x[:]
 	for i in range(0,len(x)-2):
-		for i in  range(i+1,len(x)):
+		for j in  range(i+1,len(x)):
 			if(x[i]==x[j]):
-				y[j]=="not valid"
+				y[j]="Not valid"
 	for i in y:
-		if(i=="not valid"):
+		if(i!="Not valid"):
 			s+=i	
 	return s	
