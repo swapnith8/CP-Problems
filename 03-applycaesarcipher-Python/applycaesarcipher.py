@@ -4,7 +4,7 @@
 # Write the function applyCaesarCipher(message, shift) which shifts the given 
 # message by shift letters. You are guaranteed that message is a string, and 
 # that shift is an integer between -25 and 25. Capital letters should stay capital 
-# and lowercase letters should stay lowercase, and non-letter characters should not be changed. 
+# and lowercase letters should stay lowercase, and non-letter cacters should not be changed. 
 # Note that "Z" wraps around to "A". So, for example:
 # assert(applyCaesarCipher("We Attack At Dawn", 1) == "Xf Buubdl Bu Ebxo")
 # assert(applyCaesarCipher("zodiac", -2) == "xmbgya")
@@ -12,16 +12,15 @@
 
 def fun_applycaesarcipher(msg, shift):
 	s = ""
-	for i in range(len(msg)):
-		c = msg[i]
-		if c =="":
-			s +=''
+	for c in (msg):
+		if not c.isalpha():
+			s +=c
 		elif c.isupper():
-			s+=c((ord(c) + shift -97)%26+97)
-		
+			y =(ord(c) -ord('A')+ shift)%26 +ord('A')
+			s +=chr(y)
 		else:
-			s+=c((ord(c)+shift-65)%26+65)	
-
+			y=(ord(c)-ord('a') + shift) % 26 +ord('a')
+			s+=chr(y)
 	return s
 
 
