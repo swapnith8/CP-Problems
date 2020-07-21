@@ -9,7 +9,6 @@ def issorted(a):
 	# your code goes here
 	x = sorted(a)
 	y = sorted(a, reverse =True)
-	if a == x and a ==y:
+	if a == x or a ==y:
 		return True
 	return False	
-	pass
