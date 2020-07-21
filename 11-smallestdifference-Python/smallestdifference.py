@@ -6,4 +6,9 @@
 
 def smallestdifference(a):
 	# Your code goes here
-	pass
+	a.sort()
+	x = a[len(a)]
+	for i in range(len(a)):
+		if(a[i+1]-a[i]<x):
+			x=a[i+1]-a[i]
+	return x		
