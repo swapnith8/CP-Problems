@@ -7,8 +7,8 @@
 def smallestdifference(a):
 	# Your code goes here
 	a.sort()
-	x = a[len(a)]
-	for i in range(len(a)):
+	x = a[len(a)-1]
+	for i in range(len(a)-1):
 		if(a[i+1]-a[i]<x):
 			x=a[i+1]-a[i]
 	return x		
