@@ -5,4 +5,16 @@
 
 def removeduplicate(text):
 	# Your code goes here
-	pass
+	x = []
+	s = ""
+	for i in range(len(text)):
+		x.append(text[i])
+	y =x[:]
+	for i in range(0,len(x)-2):
+		for i in  range(i+1,len(x)):
+			if(x[i]==x[j]):
+				y[j]=="not valid"
+	for i in y:
+		if(i=="not valid"):
+			s+=i	
+	return s	
