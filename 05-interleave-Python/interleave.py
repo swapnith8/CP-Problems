@@ -8,5 +8,18 @@
 
 
 def fun_interleave(s1,s2):
-	return ""
+	s = ""
+	x = zip(s1[:len(s2)],s2)
+	if(len(s1)>len(s2)):
+		
+		for i,j in x:
+			s +=i+j
+		s =s+s1[len(s2):]
+		return s
+	else:
+		for i,j in x:
+			s+=i+j
+		s=s+s2[len(s1):]	
+
+	return s
 	
