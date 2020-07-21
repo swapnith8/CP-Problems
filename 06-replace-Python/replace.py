@@ -5,15 +5,22 @@
 
 
 def fun_replace(s1, s2, s3):
-	l = len(s2)
-	s =""
-	i = 0
-	while(i<len(s1)):
-		if(s1[i:i+l]==s2):
-			s+=s3
-			i=i+l
+	b = ''
+	for x in s1:
+		if x!= s2:
+			b+=x
 		else:
-			s+=s1[i]
-			i=i+l
-	return s
+			b+=s3
+	return b		
+	# l = len(s2)
+	# s =""
+	# i = 0
+	# while(i<len(s1)):
+	# 	if(s1[i:i+l]==s2):
+	# 		s+=s3
+	# 		i=i+l
+	# 	else:
+	# 		s+=s1[i]
+	# 		i=i+l
+	# return s
 
