@@ -9,4 +9,17 @@
 
 def lookandsay(a):
 	# Your code goes here
-	pass
+	if a!=[]:
+		l = []
+		x =0
+		n = a[0]
+		for i in range(len(a)):
+			if a[i]!=n:
+				l1 = len(a[k:i])
+				l = l+[(l1,n)]
+				n = a[i]
+				p = i
+			if i ==len(a)-i:
+				l1 = len(a[k:i])
+				l = l +[(l1,n)]
+		return l		
