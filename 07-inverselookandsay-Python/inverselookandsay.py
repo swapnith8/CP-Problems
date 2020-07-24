@@ -13,4 +13,8 @@ def inverselookandsay(a):
 	l = []
 	for i in range(len(a)):
 		if a[i]==():
-			print (l)
+			return l
+		(m,n) = a[i]	
+		for j in range(m):
+			l.append(n)
+	return l		
