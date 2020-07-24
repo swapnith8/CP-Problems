@@ -15,11 +15,12 @@ def lookandsay(a):
 		n = a[0]
 		for i in range(len(a)):
 			if a[i]!=n:
-				l1 = len(a[k:i])
+				l1 = len(a[x:i])
 				l = l+[(l1,n)]
 				n = a[i]
-				p = i
-			if i ==len(a)-i:
-				l1 = len(a[k:i])
+				x = i
+			if i ==len(a):
+				l1 = len(a[x:i])
 				l = l +[(l1,n)]
-		return l		
+		return l	
+	return []		
