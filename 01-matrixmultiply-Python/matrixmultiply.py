@@ -14,9 +14,10 @@ def fun_matrixmultiply(m1, m2):
             for j in range(0,len(m2[0])):
                 n = 0
                 for k in range(0,len(m1[0])):
-                    n += m1[i][k] * m2 [j][k]
+                    n += m1[i][k] * m2 [k][j]
                 t.append(n)
-        return t
+            l.append(t)    
+        return l
     else:
         return None
 
