@@ -21,20 +21,20 @@ def fixmostlymagicsquare(L):
 		x.append(s)
 
 	for i in range(len(x)):
-		if(x.count(x[i]==1)):
+		if(x.count(x[i])==1):
 			a = i	
 			r2 = x[i]	
-		elif(x.count(x[i]>1)):
+		if(x.count(x[i])>1):
 			r1 =x[i]
 
 	for i in range(len(L)):
 		s =0
 		for j in range(len(L)):
-			s = s+L[i][j]
+			s = s+L[j][i]
 		y.append(s)
 
 	for i in range(len(y)):
-		if(y.count(y[i]==1)):
+		if(y.count(y[i])==1):
 			b=i
 	r = r2 - r1
 	if(r>0):
