@@ -20,15 +20,15 @@ def destructiveshortenlongruns(L, k):
 	while x<len(L):
 		if n==L[x]:
 			y +=1
-			if y>k:
+			if y>=k:
 				L.pop(x)
 				x=x-1
 		elif x==0:
 			n = L[x]
-			y +=1
+			y=y+1
 		else:
 			n = L[x]
 			y =1
-		x =+1
+		x =x+1
 
 	return L
