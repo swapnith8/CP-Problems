@@ -15,4 +15,9 @@
 
 def recursion_secondlargest(L):
 	# Your code goes here
-	pass
+	if(len(L)>1):
+		x = max(L)
+		L.remove(x)
+		return max(L)
+	else:
+		return None	
