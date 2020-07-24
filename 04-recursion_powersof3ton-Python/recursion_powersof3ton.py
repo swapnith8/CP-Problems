@@ -5,9 +5,9 @@
 # import math
 
 def powersOf3ToN(x,n,i):
-	if (i==n):
+	if (i>n):
 		return x
-	if (3**i<n):
+	elif (3**i<=n):
 		x.append(3**i)
 	return powersOf3ToN(x,n,i+1)
 
