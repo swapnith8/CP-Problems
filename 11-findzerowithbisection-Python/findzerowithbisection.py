@@ -14,5 +14,5 @@ def findzerowithbisection(x, epsilon):
 		mid1 =(1+mid)/2
 		findzerowithbisection(mid1,epsilon)
 	if(findzerowithbisection(mid,epsilon)*findzerowithbisection(x,epsilon)<0):
-		mid1 =(mid+x)/2
-		findzerowithbisection(mid1,epsilon)
+		mid2 =(mid+x)/2
+		findzerowithbisection(mid2,epsilon)
