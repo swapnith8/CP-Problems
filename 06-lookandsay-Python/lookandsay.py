@@ -19,8 +19,8 @@ def lookandsay(a):
 				l = l+[(l1,n)]
 				n = a[i]
 				x = i
-			if i ==len(a):
-				l1 = len(a[x:i])
+			if i ==len(a)-1:
+				l1 = len(a[x:])
 				l = l +[(l1,n)]
 		return l	
 	return []		
