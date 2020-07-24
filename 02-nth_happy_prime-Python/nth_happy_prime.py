@@ -2,28 +2,43 @@
 # Write the function nthHappyPrime(n) which takes a non-negative integer 
 # and returns the nth happy prime number (where the 0th happy prime number is 7).
 
+def ishappynumber(n):
+    if n<1:
+        return False
+    else:
+        if n == 1:
+            return True
+        else:
+            s = 0
+            t = n
+            while t>0:
+                r = t%10
+                s += r*r
+                t = t//10
+            if s == 1 or s ==4:
+                if s ==1:
+                    return True
+                else:
+                    return False    
+            else:
+                return ishappynumber(s)
 
-def verify(n):
-	s = 0
-	while(n>0):
-		s = s+(n%10)*(n%10)
-		n=n//10
-	return s		
+def isprime(n):
+    for i in range(2,n):
+        if n%i ==0:
+            return False
+        else:
+            return True
+
+    return False
+
 def fun_nth_happy_prime(n):
-	n = n+ 1
-	i = 0
-	c= 0
-	while(c<n):
-		i +=1
-		s = i
-		while(s!=1 and s!=4):
-			s=sum(s)
-		j = 1
-		y = 0
-		if(s==1):
-			while(j<=i):
-				if(i%j==0):
-					y=y+1
-			if(y==2):
-				c=c+1	
-	return i
+    x = []
+    number = 2
+    while len(x) != n+1:
+        if ishappynumber(number) and isprime(number):
+            x.append(number)
+        number +=1
+
+    return x[n]        
+	
