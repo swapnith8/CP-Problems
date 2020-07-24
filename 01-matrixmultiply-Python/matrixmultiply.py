@@ -5,7 +5,20 @@
 
 
 def fun_matrixmultiply(m1, m2):
-    return None
+    x = len(m1[0])
+    y = len(m2)
+    l = []
+    if (x == y ):
+        for i in range(0,len(m1)):
+            t = []
+            for j in range(0,len(m2[0])):
+                n = 0
+                for k in range(0,len(m1[0])):
+                    n += m1[i][k] * m2 [j][k]
+                t.append(n)
+        return t
+    else:
+        return None
 
 
 
