@@ -8,11 +8,9 @@
 def isrotation(x, y):
 	# Your code goes here
 	x = str(x)
-	y = srt(y)
+	y = str(y)
 	if (len(x)!=len(y)):
 		return False
-	if y in x*2	:
-		return True
-	if x == ''.join (reversed(y)):
+	if y in x*2	or x == ''.join (reversed(y)):
 		return True
 	return False		
