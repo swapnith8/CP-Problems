@@ -12,5 +12,22 @@
 
 
 def fun_isfactorish(n):
-	return False
+	n = abs(n)
+	t = n
+	l1 = []
+	l2 = []
+	while t>0:
+		r = t%10
+		l1.append(r)
+		t = t//10
+	if len(l1)<3 or len(l1)>3:
+		return False
+	if l1[0]==l1[1] or l1[1]==l1[2] or l1[2]==l1[1]or l1.count(0)>0:
+		return False
+	for i in range(1,n+1):
+		if n%i ==0:
+			l2.append(i)
+	for j in l1:
+		if j in l2:
+			return True
 
