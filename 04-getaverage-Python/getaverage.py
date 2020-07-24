@@ -10,5 +10,16 @@
 
 
 def fun_getaverage(s): 
-	return 0.0
+	x = s.split(",")
+	str1 =0
+	count = 0
+	for i in x:
+		if i.isdigit():
+			if i.isdigit()>0:
+				str1 = str1 +int(i)
+				count +=1
+
+	if count!=0:
+		return str1/c			
+	
 
