@@ -15,4 +15,10 @@
 
 def ismostlymagicsquare(a):
 	# Your code goes here
-	pass
+	l = []
+	l.append(sum(a[0]))
+	l.append(sum(a[1]))
+	s = list(set(l))
+	if len(s)==1:
+		return True
+	return False	
