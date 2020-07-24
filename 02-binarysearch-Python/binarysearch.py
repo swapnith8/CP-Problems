@@ -19,4 +19,4 @@ def binary_search(input_array, value):
             return c
         else:
             c +=1
-                
+    return -1       
