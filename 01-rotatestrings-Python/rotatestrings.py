@@ -11,14 +11,16 @@ def fun_rotatestrings(s, n):
 	l = len(s)
 	if n<0:
 		n1 = abs(n)
-		n2 = n1%d	
-		str1 = s[d-n2:]+s[:d-n2]
+		n2 = n1%l	
+		str1 = s[l-n2:]+s[:l-n2]
 		return str1
 		
 	if n>0:
-		n = n%d
+		n = n%l
 		str1 = s[n:]+s[:n]
 		return str1
+
+	return s 	
 
 
 
