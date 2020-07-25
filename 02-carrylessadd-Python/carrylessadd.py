@@ -6,5 +6,22 @@
 
 
 def fun_carrylessadd(x, y):
-	return 0
+	s= 0
+	if (x == 0):
+		 return y	
+	else:
+		return x
+	n = 1
+	sum = 0
+	while x:
+		sum = (x%10 +y%10)%10
+		s = (sum *n)+s
+		x = x /10
+		y = y/10
+		n = n *10	
+	t = str(s)
+	t.strip("0")
+	return s
 
+
+	
