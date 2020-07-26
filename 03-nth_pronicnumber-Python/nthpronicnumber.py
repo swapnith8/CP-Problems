@@ -12,7 +12,7 @@ def pronicnumber(n):
 		x = x+1
 	return False
 
-def nthPronicNumber(n):
+def nthpronicnumber(n):
 	l = []
 	for i in range(100):
 		if pronicnumber(i):
