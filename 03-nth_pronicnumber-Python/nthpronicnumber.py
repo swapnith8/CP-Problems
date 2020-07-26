@@ -6,10 +6,10 @@ import math
 def pronicnumber(n):
 	# Your code goes here
 	x = 0
-	while(i<=math.sqrt(n)):
+	while(x<=int(math.sqrt(n))):
 		if n== x*(x+1):
 			return True
-		i = i+1
+		x = x+1
 	return False
 
 def nthPronicNumber(n):
