@@ -27,7 +27,7 @@ def palindrome(n):
 
 def fun_nth_palindromic_prime(n):
 	y = 1
-	while n>0:
+	while n>=0:
 		if isprime(y):
 			if palindrome(y):
 				n = n+1
