@@ -11,20 +11,20 @@ def reverse(n):
 		r = (r*10)+rem
 		n = n // 10
 	return r
-	
+
 def palindrome(n):
 	return n == reverse(n)
 
 def isLyrchrel(n):
-	for i in range(100):
+	for i in range(51):
 		n= n+ reverse(n)
 		if palindrome(n):
 			return False
-
+	return True
 def nthlychrelnumbers(n):
 	# your code goes here
 	l = []
-	for i in range(1000):
+	for i in range(4000):
 		if isLyrchrel(i):
 			l.append(i)
 	return l[n-1]		
