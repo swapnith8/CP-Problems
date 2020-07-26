@@ -2,7 +2,19 @@
 # Write the function nthPronicNumber that takes a non-negative int n and returns the nth Pronic 
 # Number. Pronic number is a number which is the product of two consecutive integers, that is, a 
 # number n is a product of x and (x+1).
-
-def nthpronicnumber(n):
+import math
+def pronicnumber(n):
 	# Your code goes here
-	pass
+	x = 0
+	while(i<=math.sqrt(n)):
+		if n== x*(x+1):
+			return True
+		i = i+1
+	return False
+
+def nthPronicNumber(n):
+	l = []
+	for i in ramge(100):
+		if pronicnumber(i):
+			l.append(i)
+	return l[n]		
