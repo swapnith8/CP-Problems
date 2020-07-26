@@ -5,6 +5,31 @@
 
 
 
+def isprime(n):
+	if n>1:
+		for i in range(2,n):
+			if n%i ==0:
+				return False
+		return True 
+	else:
+		return False
+
+def palindrome(n):
+	x = 0
+	t = n
+	while(n>0):
+		r = n%10
+		x = x *10+r
+		n = n//10
+	if x!=t:
+		return False
+	return True		
 
 def fun_nth_palindromic_prime(n):
-	return 0
+	y = 1
+	while n>0:
+		if isprime(y):
+			if palindrome(y):
+				n = n+1
+		y = y+1		
+	return y-1
