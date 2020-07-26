@@ -30,6 +30,6 @@ def fun_nth_palindromic_prime(n):
 	while n>=0:
 		if isprime(y):
 			if palindrome(y):
-				n = n+1
+				n = n-1
 		y = y+1		
 	return y-1
