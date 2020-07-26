@@ -4,4 +4,20 @@
 
 def mostfrequentdigit(n):
 	# your code goes here
-	pass
+	d = str(n)
+	if len(d) == 1:
+		return n
+	elif len(d)==2:
+		if d[0] <= d[1]:
+			return d[0]
+		else:
+			return d[1]		
+	else:
+		i = -1
+		c = 0
+		for i in range(len(d)-1):
+			if (d[i]==d[i+1]):
+				i = d[i]
+				c = c+1
+		if c>0:
+			return i		
