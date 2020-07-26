@@ -10,10 +10,10 @@ def ispowerfulnumber(n):
 		if n%x == 0:
 			if n % (x**2) == 0:
 				return True
-				while n>1 and n%x ==0:
-					n = n//x
-			else:
-				x = x+1
+			while n>1 and n%x ==0:
+				n = n//x
+		else:
+			x = x+1
 	return True			
 
 def nthpowerfulnumber(n):
