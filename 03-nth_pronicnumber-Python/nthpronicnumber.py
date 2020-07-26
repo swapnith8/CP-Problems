@@ -14,7 +14,7 @@ def pronicnumber(n):
 
 def nthPronicNumber(n):
 	l = []
-	for i in ramge(100):
+	for i in range(100):
 		if pronicnumber(i):
 			l.append(i)
 	return l[n]		
